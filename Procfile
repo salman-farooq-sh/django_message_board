@@ -1,1 +1,1 @@
-web: gunicorn django_message_board.wsgi --logfile -
+web: gunicorn django_message_board.wsgi --log-file -
