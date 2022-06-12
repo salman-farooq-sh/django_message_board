@@ -1,0 +1,15 @@
+<h1>Message Board</h1>
+<hr>
+{% if post_list %}
+    <ul>
+    {% for post in post_list %}
+        <li>
+            <span style="color: red">{{ post.publication_date }}</span>
+            <span style="color: darkorange">|</span>
+            <span style="color: darkgreen">{{ post.text }}</span>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No messages yet</p>
+{% endif %}
